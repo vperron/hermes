@@ -1,0 +1,12 @@
+2013-01-18 Version 0.2.1
+
+	* JSON as default POST value
+	* uses a full-featured config file to push to API
+	* still using user/password for authentication
+	* handles msgpack also
+	* persists according to user choice, or in case of failure
+	* configurable several retries in case of failure
+	* persist-only and realtime modes available
+	* time_cap, time after which the aggregated data is always sent
+	* uses gzip compression upon disk storage
+	* only supports one type of input data for now, does not fork

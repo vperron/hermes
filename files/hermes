@@ -1,0 +1,46 @@
+config section 'receiver'
+  option endpoint 'tcp://*:10070'
+  option max_idle_time '900'
+  option standalone '0'
+  option backup '0'
+  option realtime '0'
+  option has_ftp '1'
+
+config section 'persist'
+  option buffer_lines '10'
+
+config section 'http'
+  option server ''
+  option auth_endpoint ''
+  option data_endpoint ''
+  option status_endpoint ''
+  option compress_requests '1'
+  option timeout '15'
+  option token ''
+  option version 'application/json; version=20140428;'
+  option username 'user'
+  option password 'secret'
+
+config section 'hashtable'
+  option maxsize '1000'
+  option maxtime '60'
+
+config section 'throughput'
+  option maxsize '1000'
+  option maxtime '1'
+
+config section 'failure'
+  # Used for overriding during tests
+  # option persistpath '/mnt/usbdisk/'
+  option memorypath '/tmp/failure/'
+  option retry_time '900'
+  option max_retry '10'
+
+config section 'ftp'
+  option endpoint 'ftp://xxxxx:yyyyyy@192.168.1.1'
+  option folder 'DATASTREAM_UID'
+  option timeout '30'
+
+config section 'meta'
+  option status_file_name '/tmp/hermes_status'
+

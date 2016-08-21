@@ -1,0 +1,16 @@
+Makefile
+Makefile.in
+aclocal.m4
+autom4te.cache/
+config.log
+config.status
+config/
+configure
+libtool
+src/.deps/
+src/Makefile
+src/Makefile.in
+src/hermes
+src/platform.h
+src/platform.h.in
+src/stamp-h1
